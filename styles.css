@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+
+
+}
+.container{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+transform-style: preserve-3d;
+z-index:-1 ;
+}
+
+.background,.foreground{
+    position: absolute;
+    z-index:-1;
+    object-fit: cover;
+}
+
+.background{
+    transform: translateZ(-40px) scale(5);
+    height: 100%;
+    width: 100%;
+}
+.foreground{
+    transform: translateZ(-30px) scale(2);
+    height: 100%;
+}
+/* .foreground:hover{
+    background-color: yellowgreen;
+} */
+h1{
+    position: absolute;
+    top: 4rem;
+    font-size: 7rem;
+    letter-spacing:4px ;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+    font-family:Arial, Helvetica, sans-serif;
+    /* color: rgb(255, 251, 251); */
+    color: rgb(16, 3, 3);
+}
+h1:hover{
+    color: rgb(52, 34, 34);
+}
+section{
+  /* background-color: rgb(45,45,45); */
+  background-color: rgb(24, 3, 3);
+  color: white;
+  padding: 5rem 0;
+
+}
+.secHeading{
+    font-size:5rem;
+    padding:0 10rem; 
+    color: #b6e3d4;
+    background-color:yellow;
+    color: black;
+}
+.secHeading:hover{
+    background-color:rgb(205, 205, 27);
+    color:rgb(25, 10, 10);
+}
+
+.text{
+    font-size: 1.3rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+    /* color: rgba(241, 234, 235, 0.876);*/
+    /* color: white;
+     */
+     color: lightyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+.desc{
+    position: absolute;
+    background-color: yellow;
+    padding: 0.5rem 2.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: black;
+    font-size: 3.5rem;
+    font-weight:600;
+    border-radius: 40px;
+}
+.desc:hover{
+    background-color:rgb(205, 205, 27);
+    color:rgb(25, 10, 10);
+    /* transform: scale(1.0001); */
+    /* transition: 10s; */
+}
+.bg1{
+    background-image: url(vishnu.jpg);
+
+}
+.bg2{
+    background-image: url(shreeram.jpeg);
+
+}
+.bg3{
+    background-image: url(krishna.jpg);
+}
+.bg4{
+    background-image: url(narasimha.jpg);
+}
+.bg11{
+    background-image: url(vamana.jpg);
+}
+.bg5{
+    background-image: url(matsya.jpg);
+}
+.bg6{
+    background-image: url(varaha.jpg);
+}
+.bg7{
+    background-image: url(kurma.jpg);
+}
+.bg8{
+    background-image: url(parshuram.jpg);
+}
+.bg9{
+    background-image: url(buddha.jpg);
+}
+.bg10{
+    background-image: url(kalki.jpg);
+}
+#biswa{
+    text-align: center;
+    color: yellow;
+    font-weight: bold;
+    font-style: oblique;
+    font-size:larger;
+    
+}
